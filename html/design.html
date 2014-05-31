@@ -1,0 +1,308 @@
+<!doctype html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/styleWorkSace.css">
+    <link rel="stylesheet" href="../css/colpick.css" />
+    <link rel="stylesheet" href="../css/jquery-ui.css" /><!-- scale-->
+    <link rel="stylesheet" href="../css/tableStyle.css" />
+    <link href="../css/styleDragandDrop.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/btnstyle.css" />
+    <link rel="stylesheet" href="../css/hover.css" />
+
+<title></title>
+
+</head>
+<body>
+
+    
+
+    <section class="demo">
+
+        <dl class="list maki ">
+            <dt><img class="logo"  src="../imgs/Logo/just_logo.png"/>Tailor</dt>
+            <dd><a id="box" href="#"><img  src="../imgs/toolBox/2.png"/><span style="font-size:20px">Box</span></a></dd>
+            <dd><a id="tablebtn" href="#"><img  src="../imgs/toolBox/3.png"/><span style="font-size:20px" >Table</span></a></dd>
+            <dd><a id="cbl" href="#"><img  src="../imgs/toolBox/7.png"/><span style="font-size:20px">check Box</span></a></dd>
+            <dd><a href="#"><img  src="../imgs/toolBox/4.png"/><span style="font-size:20px">Image</span></a></dd>
+            <dd><a id="link" href="#"><img  src="../imgs/toolBox/5.png"/><span style="font-size:20px">Link</span></a></dd>
+            <dd><a id="btn" href="#"><img   src="../imgs/toolBox/6.png"/><span  style="font-size:20px">Button</span></a></dd>
+            <dd><a id="rad" href="#"><img   src="../imgs/toolBox/9.png"/><span style="font-size:20px">Radio Button</span></a></dd>
+            <dd><a id="ddl" href="#"><img   src="../imgs/toolBox/8.png"/><span style="font-size:20px">Drop down</span></a></dd>
+            <dd><input type="file" id="imageInput" onchange="loadImageFile();" /></dd>
+
+            
+        </dl>
+    </section>
+    <section class="topIcnos">
+        <ul class="topIcons">
+            <li><img src="../imgs/MainIcons/forward.png" /></li>
+            <li><img src="../imgs/MainIcons/back.png" /></li>
+            <li><img id="cut" src="../imgs/MainIcons/cut.png" /></li>
+            <li><img src="../imgs/MainIcons/copy.png" /></li>
+            <li><img src="../imgs/MainIcons/paste.png" /></li>
+            <li><img src="../imgs/MainIcons/zoomIn.png" /></li>
+            <li><img src="../imgs/MainIcons/zoomOut.png" /></li>
+            <li><img src="../imgs/MainIcons/grid.png" /></li>
+            <li><img src="../imgs/MainIcons/Refresh-icon.png" /></li>
+            <li><img id="picker" src="../imgs/MainIcons/color-picker.png" /></li>
+
+
+        </ul>
+    </section>
+    <section class="workSpace">
+        <div class="tabs">
+    <ul class="tab-links">
+        <li class="active"><a href="#tab1">Design</a></li>
+        <li><a id="htmlTab" href="#tab2">HTML</a></li>
+        <li><a id="cssTab" href="#tab3">CSS</a></li>
+        <li><a href="#tab4">JS</a></li>
+    </ul>
+ 
+    <div class="tab-content">
+        <div id="tab1" class="tab active">
+            <div id="draw" class="drawing stage imagePreview">
+                <div id="imagePreview"></div>
+           
+                </div>
+        </div>
+ 
+        <div id="tab2" class="tab">
+            
+        </div>
+ 
+        <div id="tab3" class="tab">
+            <!--<div class="color-box colpick_new_color" style="background-color:#ffd800 ;width:100px;height:100px;position:relative;left:0;top:0"></div>-->
+            <p class="hexa"> Here will be the CSS of the design !</p>
+        </div>
+ 
+        <div id="tab4" class="tab">
+            <p>Here will be the CSS of the design !</p>
+            <p>var x = document.getElementById();</p>
+        </div>
+    </div>
+</div>
+         
+    
+    </section>
+   
+    <!-- popups ---------------------------------------------------------------------------------- -->
+
+      <div class="btnpopup">
+        <div class="popup1">
+            <label>Button text:</label>
+           <input type="text" id="btntext" /><br />
+            <label>Width:</label>
+           <input type="text" id="btnwidth" /><br />
+            <label>Hight:</label>
+           <input type="text" id="btnheight"/><br />
+            <br /><br />
+            <label class="diffrent">Choose your hover style :</label>
+            <br />
+
+            <div class="btnshover">
+            <a href="#" class="button buzz-out">Click</a>
+            <a href="#" class="button push">Click</a>
+            <a href="#" class="button hollow">Click</a>
+            <a href="#" class="button float-shadow">Click</a>
+                <a href="#" class="button box-shadow-outset">Click</a><br />
+            <a href="#" class="button curl-top-right">Click</a>
+                <a href="#" class="button wobble-top">Click</a>
+                <a href="#" class="button wobble-horizontal">Click</a>
+                <a href="#" class="button shrink">Click</a>
+                <a href="#" class="button round-corners">Click</a>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <input type="button" class="btns" id="insertbtn" value="insert Button" />
+            <input type="button" class="btns" id="cancel" value="cancel" />
+
+       </div>
+    </div>
+        <div class="radpopup">
+        <div class="popup2">
+            <input type="text" class="radvalues" />
+            <input type="button" class="radadd btns" value="Add New" />
+            <input type="button" class="radfinish btns" value="finish" />
+        </div>
+            </div>
+
+        <div class="ddlpopup">
+        <div class="popup3">
+            <input type="text" class="ddlvalues" />
+            <input type="button" class="ddladd btns" value="Add New" />
+            <br />
+            <br />
+            <label>Select your style:</label>
+            
+            <section class="container">
+    <div class="dropdown">
+      <select name="one" class="dropdown-select">
+        <option value="">Select…</option>
+        <option value="1">Option #1</option>
+        <option value="2">Option #2</option>
+        <option value="3">Option #3</option>
+      </select>
+    </div>
+    <div class="dropdown dropdown-dark">
+      <select name="two" class="dropdown-select">
+        <option value="">Select…</option>
+        <option value="1">Option #1</option>
+        <option value="2">Option #2</option>
+        <option value="3">Option #3</option>
+      </select>
+    </div>
+  </section>
+
+            <br />
+            <br />
+            <input type="button" class="ddlfinish btns" value="finish" />
+        </div>
+    </div>
+
+    <div class="cblpopup">
+        <div class="popup4">
+            <input type="text" class="cblvalues" />
+            <input type="button" class="cbladd btns" value="Add New" />
+            <input type="button" class="cblfinish btns" value="finish" />
+        </div>
+    </div>
+
+    <div class="linkpopup">
+        <div class="popup5">
+            <label class="noStyle">URL :</label><br />
+            <input type="text" class="linkurl" /><br />
+            <label>Example:www.google.com</label><br /><br />
+            <label class="noStyle">Link Text :</label><br />
+            <input type="text" class="linkdescription" /><br />
+            <input type="button" class="linkadd btns" value="Add New" />
+            <input type="button" class="linkfinish btns" value="finish" />
+        </div>
+    </div>
+
+    <!-- popups ---------------------------------------------------------------------------------- -->
+
+    
+    <script src="../js/jquery-1.11.0.js"></script>
+    <script src="../js/hold.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="../js/makisu.js"></script>
+    <script src="../js/colpick.js"></script>
+    <script src="../js/insertImg.js"></script>
+    <script type="text/javascript" src="../js/draw.js"></script>
+    <script src="../js/drag-scale.js"></script><!-- scale-->
+    <script src="../js/insertButtons.js"></script>
+    <!--<script src="../js/scriptButtons.js"></script>-->
+    <script src="../js/tableScript.js"></script>
+
+    <!--<script src="../js/checkbox+linkScript.js"></script>-->
+
+    <script>
+
+        // The `enabled` flag will be `false` if CSS 3D isn't available
+
+        if ( $.fn.makisu.enabled ) {
+
+            var $sashimi = $( '.sashimi' );
+            var $nigiri = $( '.nigiri' );
+            var $maki = $( '.maki' );
+
+            // Create Makisus
+
+            $nigiri.makisu({
+                selector: 'dd',
+                overlap: 0.85,
+                speed: 0.5
+            });
+
+            $maki.makisu({
+                selector: 'dd',
+                overlap: 0.6,
+                speed: 0.85
+            });
+
+            $sashimi.makisu({
+                selector: 'dd',
+                overlap: 0.2,
+                speed: 0.5
+            });
+
+            // Open all
+            
+            $( '.list' ).makisu( 'open' );
+
+            // Toggle on click
+
+            $( '.toggle' ).on( 'click', function() {
+                $( '.list' ).makisu( 'toggle' );
+            });
+            $('.logo').on('click', function () {
+                $('.list').makisu('toggle');
+            });
+            // Disable all links
+
+            $( '.demo a' ).click( function( event ) {
+                event.preventDefault();
+            });
+
+        } else {
+
+            $( '.warning' ).show();
+        }
+
+
+        $(document).ready(function () {
+            var selected;
+            $('#picker').colpick({
+                layout: 'hex',
+                submit: 0,
+                colorScheme: 'dark',
+                onChange: function (hsb, hex, rgb, el, bySetColor) {
+                   
+                    $('.color-box').css('background-color','#'+hex)
+                   
+                    // Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+                    if (!bySetColor) $(el).val(hex);
+                }
+            }).keyup(function () {
+                $(this).colpickSetColor(this.value);
+            });
+
+            $('body').on('click', '.create-div', function () {
+                var selected;
+                $('.draw .create-div').each(function (e) {
+                   
+                    $(this).css('border', '1px dotted red');
+                    $(this).removeClass('selected');
+
+                })
+               selected=  $(this) ;
+               selected.css('border-color', 'blue')
+               selected.addClass('selected');
+               
+                
+            });
+            
+            $('#cut').click(function () {
+                $('.draw .create-div').find($('.selected').remove());
+                
+            });
+
+
+            $("#box").toggle(function () {
+                $(this).css("border", "solid 2px #068dcd ")
+                $('#draw').addClass('draw');
+            }, function () {
+                $(this).css("border", "none")
+                $('#draw').removeClass('draw');
+
+
+            });
+        })
+    </script>
+</body>
+</html>

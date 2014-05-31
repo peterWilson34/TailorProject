@@ -1,0 +1,113 @@
+<!docytype html >
+<html>
+<title>
+HTML Introduction
+</title>
+<head>
+<link href="css/stylehtml.css"rel="stylesheet"type="text/css">
+</head>
+<body>
+<div class="left_col">
+<h1 class="left"><a target="_top" href="indexh.html"class="left">
+HTML Tutorial</a>
+</h1>
+<a target="_top" href="html1.html" class="menu_html_intro">HTML Introduction</a>
+<a target="_top" href="html2.html" class="menu_html_editors">HTML Editors</a>
+<a target="_top" href="html3.html" class="menu_html_basic">HTML Basic</a>
+<a target="_top" href="html4.html" class="menu_html_elements">HTML Elements</a>
+<a target="_top" href="html5.html" class="menu_html_attributes">HTML Attributes</a>
+<a target="_top" href="html6.html" class="menu_html_headings">HTML Headings</a>
+<a target="_top" href="html7.html" class="menu_html_paragraphs">HTML Paragraphs</a>
+<a target="_top" href="html8.html" class="menu_html_formatting">HTML Formatting</a>
+<a target="_top" href="html9.html" class="menu_html_comments">HTML Comments</a>
+<a target="_top" href="html10.html" class="menu_html_links">HTML Links</a>
+<a target="_top" href="html11.html" class="menu_html_head">HTML Head</a>
+<a target="_top" href="html12.html" class="menu_html_css">HTML CSS</a>
+
+</div>
+<div class="wrapper">
+<h2 class="intro">HTML Introduction</h2>
+<div class="content">
+
+<div class="con">
+<textarea readonly class="code">
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+
+</body>
+</html>
+</textarea>
+</div>
+<br><br>
+<p class="list">The DOCTYPE declaration defines the document type</p><br>
+<p class="list">The text between "html" and "/html"describes the web page</p><br>
+<p class="list">The text between "body" and "/body" is the visible page content</p><br>
+<p class="list">The text between "h1" and "/h1" is displayed as a heading</p><br>
+<p class="list">The text between "p" and "/p" is displayed as a paragraph</p>
+</div>
+</div>
+<!------------------right---------------->
+<div class="right_col">
+<h1 class="right">
+Continue.....
+</h1>
+
+<a target="_top" href="html13.html" class="menu_html_intro">HTML Images</a>
+<a target="_top" href="html14.html" class="menu_html_editors">HTML Tables</a>
+<a target="_top" href="html15.html" class="menu_html_basic">HTML Lists</a>
+<a target="_top" href="html16.html" class="menu_html_elements">HTML Blocks</a>
+<a target="_top" href="html17.html" class="menu_html_attributes">HTML Layout</a>
+<a target="_top" href="html18.html" class="menu_html_headings">HTML Forms</a>
+<a target="_top" href="html19.html" class="menu_html_paragraphs">HTML Iframes</a>
+<a target="_top" href="html20.html" class="menu_html_formatting">HTML Colors</a>
+<a target="_top" href="html21.html" class="menu_html_comments">HTML Colornames</a>
+<a target="_top" href="html22.html" class="menu_html_links">HTML Colorvalues</a>
+<a target="_top" href="html23.html" class="menu_html_head">HTML JavaScript</a>
+<a target="_top" href="html24.html" class="menu_html_css">HTML Entities</a>
+
+
+</div>
+<!------------------right---------------->
+<script src="js/jquerynew.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/textEffect.jquery.js"></script>
+
+
+<script>
+(function(){
+jQuery(document).ready(function($) {
+ $('h2').textEffect();
+
+});
+$(document).ready(function() {
+// Tooltip only Text
+$('.masterTooltip').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+});
+
+})();
+</script>
+
+</body>
+</html>

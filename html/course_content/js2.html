@@ -1,0 +1,153 @@
+<!docytype html >
+<html>
+<title>
+JS Where To
+</title>
+<head>
+<link href="css/stylehtml.css"rel="stylesheet"type="text/css">
+<link href="css/jquery-letterfx.css"rel="stylesheet">
+<link href="css/jquery-letterfx.min.css"rel="stylesheet">
+</head>
+<body>
+<div class="left_col">
+<h1 class="left"><a target="_top" href="indexh.html"class="left">
+JS Tutorial</a>
+</h1>
+<a target="_top" href="js1.html" class="menu_html_intro">JS Introduction</a>
+<a target="_top" href="js2.html" class="menu_html_editors">JS Where To</a>
+<a target="_top" href="js3.html" class="menu_html_basic">JS Output</a>
+<a target="_top" href="js4.html" class="menu_html_elements">JS Syntax</a>
+<a target="_top" href="js5.html" class="menu_html_attributes"> JS Statements</a>
+<a target="_top" href="js6.html" class="menu_html_headings">JS Comments</a>
+<a target="_top" href="js7.html" class="menu_html_paragraphs">JS Variables</a>
+<a target="_top" href="js8.html" class="menu_html_formatting">JS Data Types</a>
+<a target="_top" href="js9.html" class="menu_html_comments">JS Functions</a>
+<a target="_top" href="js10.html" class="menu_html_links">JS Events</a>
+<a target="_top" href="js11.html" class="menu_html_head">JS Objects</a>
+<a target="_top" href="js12.html" class="menu_html_css">JS Strings</a>
+
+</div>
+<div class="wrapper">
+<h2 class="intro">JavaScript Where To</h2>
+<div class="contentss">
+<p class="ordercss">To insert a JavaScript into an HTML page, use the "script" tag.</p>
+<div>
+<textarea readonly class="code">
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "My First JavaScript Function";
+}
+</script>
+</textarea>
+</div>
+<p class="ordercss">JavaScript in "head"</p>
+<div>
+<textarea readonly class="code">
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
+</textarea>
+</div>
+
+<p class="ordercss">JavaScript in "body"</p>
+<div>
+<textarea readonly class="code">
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</body>
+</html>
+</textarea>
+</div>
+<p class="ordercss">External JavaScripts</p>
+<div>
+<textarea class="code">
+<!DOCTYPE html>
+<html>
+<body>
+<script src="myScript.js"></script>
+</body>
+</html>
+</textarea>
+</div>
+
+
+
+
+</div>
+</div>
+<!------------------right---------------->
+<div class="right_col">
+<h1 class="right">
+Continue.....
+</h1>
+
+<a target="_top" href="js13.html" class="menu_html_intro">JS Numbers</a>
+<a target="_top" href="js14.html" class="menu_html_editors">JS Operators</a>
+<a target="_top" href="js15.html" class="menu_html_basic">JS Maths</a>
+<a target="_top" href="js16.html" class="menu_html_elements">JS Dates</a>
+<a target="_top" href="js17.html" class="menu_html_attributes">JS Arrays</a>
+<a target="_top" href="js18.html" class="menu_html_headings">JS Booleans</a>
+<a target="_top" href="js19.html" class="menu_html_paragraphs">JS Comparisons</a>
+<a target="_top" href="js20.html" class="menu_html_formatting">JS Conditions</a>
+<a target="_top" href="js21.html" class="menu_html_comments">JS Switch</a>
+<a target="_top" href="js22.html" class="menu_html_links">JS Loop For</a>
+<a target="_top" href="js23.html" class="menu_html_head">JS While Loop</a>
+<a target="_top" href="js24.html" class="menu_html_css">JS Breaks</a>
+
+
+</div>
+<!------------------right---------------->
+<script src="js/jquerynew.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/textEffect.jquery.js"></script>
+<script src="js/jquery-letterfx.js"></script>
+<script src="js/letterfx.jquery.js"></script>
+
+<script>
+(function(){
+jQuery(document).ready(function($) {
+ $('h2').textEffect();
+});
+$(document).ready(function() {
+ $('.list').letterfx({"fx":"fly-right fly-bottom spin"});
+});
+$(document).ready(function() {
+ $('.orders').letterfx({"fx":"fly-right fly-bottom spin"});
+});
+
+
+})();
+
+</script>
+
+</body>
+</html>

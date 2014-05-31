@@ -1,0 +1,88 @@
+<! Doctype html>
+<html>
+<title>
+HTML Colors
+</title>
+<head>
+<link href="css/stylehtml.css"rel="stylesheet"type="text/css">
+<link href="css/jquery-letterfx.css"rel="stylesheet">
+<link href="css/jquery-letterfx.min.css"rel="stylesheet">
+</head>
+<body>
+<div class="left_col">
+<h1 class="left"><a target="_top" href="indexh.html"class="left">
+HTML Tutorial</a>
+</h1>
+<a target="_top" href="html1.html" class="menu_html_intro">HTML Introduction</a>
+<a target="_top" href="html2.html" class="menu_html_editors">HTML Editors</a>
+<a target="_top" href="html3.html" class="menu_html_basic">HTML Basic</a>
+<a target="_top" href="html4.html" class="menu_html_elements">HTML Elements</a>
+<a target="_top" href="html5.html" class="menu_html_attributes">HTML Attributes</a>
+<a target="_top" href="html6.html" class="menu_html_headings">HTML Headings</a>
+<a target="_top" href="html7.html" class="menu_html_paragraphs">HTML Paragraphs</a>
+<a target="_top" href="html8.html" class="menu_html_formatting">HTML Formatting</a>
+<a target="_top" href="html9.html" class="menu_html_comments">HTML Comments</a>
+<a target="_top" href="html10.html" class="menu_html_links">HTML Links</a>
+<a target="_top" href="html11.html" class="menu_html_head">HTML Head</a>
+<a target="_top" href="html12.html" class="menu_html_css">HTML CSS</a>
+
+</div>
+<div class="wrapper">
+<h2 >HTML Colors</h2>
+<div class="content">
+<p class="list">Color Values</p><br>
+<p class="orders">CSS colors are defined using a hexadecimal (hex) notation for the combination of Red,
+ Green, and Blue color values (RGB). 
+ The lowest value that can be given to one of the light sources is 0 (hex 00).
+ The highest value is 255 (hex FF).
+Hex values are written as 3 double digit numbers,
+ starting with a # sign.</p><br>
+
+<img src="images/pic27.jpg">
+</div>
+</div>
+<!------------------right---------------->
+<div class="right_col">
+<h1 class="right">
+Continue.....
+</h1>
+
+<a target="_top" href="html13.html" class="menu_html_intro">HTML Images</a>
+<a target="_top" href="html14.html" class="menu_html_editors">HTML Tables</a>
+<a target="_top" href="html15.html" class="menu_html_basic">HTML Lists</a>
+<a target="_top" href="html16.html" class="menu_html_elements">HTML Blocks</a>
+<a target="_top" href="html17.html" class="menu_html_attributes">HTML Layout</a>
+<a target="_top" href="html18.html" class="menu_html_headings">HTML Forms</a>
+<a target="_top" href="html19.html" class="menu_html_paragraphs">HTML Iframes</a>
+<a target="_top" href="html20.html" class="menu_html_formatting">HTML Colors</a>
+<a target="_top" href="html21.html" class="menu_html_comments">HTML Colornames</a>
+<a target="_top" href="html22.html" class="menu_html_links">HTML Colorvalues</a>
+<a target="_top" href="html23.html" class="menu_html_head">HTML JavaScript</a>
+<a target="_top" href="html24.html" class="menu_html_css">HTML Entities</a>
+
+
+</div>
+<!------------------right---------------->
+<script src="js/jquerynew.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/textEffect.jquery.js"></script>
+<script src="js/jquery-letterfx.js"></script>
+<script src="js/letterfx.jquery.js"></script>
+
+<script>
+(function(){
+jQuery(document).ready(function($) {
+ $('h2').textEffect();
+});
+$(document).ready(function() {
+ $('.list').letterfx({"fx":"smear","letter_end":"rewind"});
+});
+$(document).ready(function() {
+ $('.orders').letterfx({"fx":"fly-right fly-bottom spin"});
+});
+
+
+})();
+</script>
+</body>
+</html>
